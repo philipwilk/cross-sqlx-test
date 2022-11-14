@@ -1,0 +1,11 @@
+[package]
+name = "sqlx-cross-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sqlx = { version = "0.6", features = [ "runtime-tokio-native-tls" ] }
+# same thing if you try use sea-orm, as that relies on sqlx
+# sea-orm = { version = "0.9.3", features = [ "sqlx-mysql", "runtime-tokio-native-tls", "macros"  ] }
