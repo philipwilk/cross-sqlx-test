@@ -1,0 +1,2 @@
+At some point in August, my cross scripts for building sea-orm (hence sqlx) stopped working because openssll-dev was missing. 
+But it wasn't? libssl-dev is now necessary on host and for the target for compiles, and I don't know why
